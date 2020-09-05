@@ -252,6 +252,8 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 4px;
   letter-spacing: 1px;
   border-bottom: 3px solid #149ddd;
+
+
 }
 
 @media (min-width: 1024px) {
@@ -504,6 +506,7 @@ section {
 }
 
 .portfolio #portfolio-flters li {
+.simplefilter > li:first-child { display: none; }
   cursor: pointer;
   display: inline-block;
   padding: 10px 15px 8px 15px;
@@ -705,7 +708,7 @@ section {
   font-style: italic;
   margin: 0 15px 15px 15px;
   padding: 20px;
-  
+
 }
 
 .testimonials .testimonial-item p::after {
