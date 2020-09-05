@@ -14,9 +14,9 @@
     new Typed('.typed', {
       strings: typed_strings,
       loop: true,
-      typeSpeed: 100,
-      backSpeed: 50,
-      backDelay: 2000
+      typeSpeed: 40,
+      backSpeed: 40,
+      backDelay: 1000
     });
   }
 
@@ -135,16 +135,19 @@
       itemSelector: '.portfolio-item',
       layoutMode: 'fitRows'
     });
-
+    //
     $('#portfolio-flters li').on('click', function() {
-      $("#portfolio-flters li").removeClass('filter-active');
+      $("#portfolio-flters li").removeClass('filter-Projects');
       $(this).addClass('filter-active');
+
 
       portfolioIsotope.isotope({
         filter: $(this).data('filter')
       });
       aos_init();
     });
+
+
 
     // Initiate venobox (lightbox feature used in portofilo)
     $(document).ready(function() {
